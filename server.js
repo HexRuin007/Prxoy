@@ -4,7 +4,7 @@ const fetch = require('node-fetch');
 
 const app = express();
 app.use(cors());
-app.options('*', cors());
+app.options('/*', cors());
 
 app.get('/', (req, res) => {
   console.log('GET /');
